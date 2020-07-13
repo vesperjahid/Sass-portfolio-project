@@ -2,7 +2,10 @@
 @import  './variables';
 @import  './home';
 @import  './menu';
-
+@import  './about';
+@import  './projects';
+@import  './contact';
+@import  './responsive';
 
 
 body{
@@ -20,6 +23,9 @@ h1,h2,h3{
 a{
     color: set-text-color($primary-color);
     text-decoration: none;
+}
+.text-secondary{
+    color: $secondary-color;
 }
 header{
     position: fixed;
@@ -39,6 +45,7 @@ main{
         
         a{
             padding: 0.4rem;
+            color:set-text-color($primary-color);
             @include transition-ease;
             
             &:hover{
@@ -50,7 +57,7 @@ main{
 }
 
 footer{
-    font-size: 1rem;
+    font-size: 1.3rem;
     position: fixed;
     bottom: 0.4rem;
     right: 1rem;
